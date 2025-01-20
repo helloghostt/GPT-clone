@@ -20,7 +20,7 @@ type Props = {
 export function Chat({ initialMessages }: Props) {
   const router = useRouter();
   const params = useParams<{ conversationId: string }>();
-  const user = useUserStore((state) => state.user);
+  // const user = useUserStore((state) => state.user);
   const { messages, setMessages, input, handleInputChange, handleSubmit } =
     useChat({
       onFinish: async (message) => {

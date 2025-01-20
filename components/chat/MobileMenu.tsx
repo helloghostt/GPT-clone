@@ -2,7 +2,6 @@
 
 import { Menu } from "lucide-react";
 import { Sheet, SheetContent, SheetTitle, SheetTrigger } from "../ui/sheet";
-import { Sidebar } from "./Sidebar";
 import * as VisuallyHidden from "@radix-ui/react-visually-hidden";
 import { useSheetStore } from "@/store/sheet";
 

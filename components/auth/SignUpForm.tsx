@@ -15,7 +15,7 @@ import toast from "react-hot-toast";
 
 export function SignUpForm() {
   const [error, action] = useActionState(signUp, undefined);
-  const { errors, validateField, validateForm } =
+  const { errors, validateField } =
     useFormValidate<TSignUpFormError>(SignUpSchema);
   // 회원 유효성 검증 로직
   const handleChange = (event: ChangeEvent<HTMLInputElement>) => {
@@ -23,20 +23,6 @@ export function SignUpForm() {
     console.log(name);
     console.log(value);
     validateField(name, value);
-  };
-
-  // form 제출 전 전체 validation을 위한 함수 추가
-  const handleSubmit = async (formData: FormData) => {
-    // 전체 필드 validation
-    const isValid = await validateForm({
-      name: formData.get("name") as string,
-      email: formData.get("email") as string,
-      password: formData.get("password") as string,
-    });
-
-    if (!isValid) {
-      return;
-    }
   };
 
   useEffect(() => {
