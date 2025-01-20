@@ -11,7 +11,6 @@ import { useModelStore } from "@/store/model";
 import { useParams, useRouter } from "next/navigation";
 import { CHAT_ROUTES } from "@/constants/routes";
 import { addMessages, createConversation } from "@/actions/conversation";
-import { useUserStore } from "@/store/user";
 
 type Props = {
   initialMessages?: TMessage[];
