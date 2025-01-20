@@ -1,3 +1,8 @@
+# Next.js로 만들어본 ChatGPT 클론입니다.
+
+.env파일에 DATABASE_URL, SESSION_SECRET, OPENAI_API_KEY를 넣고 실행하면 됩니다.<br/>
+아래에 명령어와 사용한 라이브러리가 있습니다.<br />
+
 This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
 
 ## Getting Started
@@ -20,17 +25,55 @@ You can start editing the page by modifying `app/page.tsx`. The page auto-update
 
 This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
 
-## Learn More
+## React19
 
-To learn more about Next.js, take a look at the following resources:
+React19로 업데이트 되면서 useActionState hook, useFormState hook이 추가됨
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## Neon PostgreSQL
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+https://console.neon.tech/<br/>
+npm i drizzle-orm @neondatabase/serverless <br/>
+npm i -D drizzle-kit
 
-## Deploy on Vercel
+## Shadcn ui
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+npx shadcn@latest init<br/>
+npx shadcn@latest add button<br/>
+npx shadcn@latest add card label input
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+## 타입스크립트를 지원하는 스키마 검증 라이브러리
+
+npm add zod
+
+## 비밀번호 암호화하는 bycryptjs 라이버러리
+
+npm add bcryptjs<br/>
+npm add @types/bcryptjs
+
+## 오류 토스트 형태로 띄워주는 react-hot-toast라이브러리
+
+npm add react-hot-toast
+
+## JWT 토큰 관련 jose 라이브러리
+
+npm add jose
+
+## shadcn-ui
+
+npx shadcn@latest add dropdown-menu<br/>
+npx shadcn@latest add sheet<br/>
+npx shadcn@latest add select <br/>
+npx shadcn@latest add avatar<br/>
+npx shadcn@latest add textarea<br/>
+npx shadcn@latest add dialog<br/>
+
+## 상태관리
+
+npm add zustand
+
+## vercel.ai
+
+npm install ai @ai-sdk/openai
+
+<br/>
+<br/>
